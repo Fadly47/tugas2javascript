@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tugas 2 Javascript</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 style="text-align: center">Form Data Pegawai</h2>
+    <br />
+    <div style="width: 70%; margin: auto">
+      <label>Nama Pegawai:</label><br />
+      <input type="text" id="nama" value="Dodi Prayodi" /><br /><br />
+
+      <label>Umur:</label><br />
+      <input type="number" id="umur" value="25" /><br /><br />
+
+      <label>Jabatan:</label><br />
+      <select id="jabatan">
+        <option value="manajer">Manajer</option>
+        <option value="asisten manajer">Asisten Manajer</option>
+        <option value="staff">Staff</option></select
+      ><br /><br />
+
+      <label>Status:</label><br />
+      <select id="status">
+        <option value="menikah">Menikah</option>
+        <option value="belum menikah">Belum Menikah</option></select
+      ><br /><br />
+
+      <button onclick="cetakData()">Cetak Tabel Gaji</button>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Nama Pegawai</th>
+          <th>Umur</th>
+          <th>Jabatan</th>
+          <th>Status</th>
+          <th>Gaji Pokok</th>
+          <th>Tunjangan Jabatan</th>
+          <th>BPJS</th>
+          <th>Tunjangan Keluarga</th>
+        </tr>
+      </thead>
+      <tbody id="dataPegawai"></tbody>
+      <tfoot>
+        <tr>
+          <td colspan="7">Total Gaji</td>
+          <td id="totalGaji"></td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+* {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: 20px;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 70%;
+  margin: 20px auto;
+}
+th,
+td {
+  border: 1px solid #333;
+  padding: 8px 12px;
+  text-align: left;
+}
+thead {
+  background-color: #a1cb97;
+}
+tfoot {
+  background-color: #fff71a;
+  font-weight: bold;
+}
